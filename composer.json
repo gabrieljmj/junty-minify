@@ -1,0 +1,24 @@
+{
+    "name": "gabrieljmj/junty-minify",
+    "description": "Junty plugin for CSS and JS minification.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GabrielJMJ",
+            "homepage": "http://github.com/gabrieljmj"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gabrieljmj\\JuntyMinify\\": "src/Gabrieljmj/JuntyMinify/",
+            "Test\\Gabrieljmj\\JuntyMinify\\": "tests/Gabrieljmj/JuntyMinify/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "junty/junty-plugin": "^0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    }
+}
