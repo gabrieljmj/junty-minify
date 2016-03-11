@@ -2,6 +2,7 @@
 namespace Gabrieljmj\JuntyMinify;
 
 use MatthiasMullie\Minify\Minify;
+use Junty\Plugin\PluginInterface;
 
 abstract class AbstractMinifier implements PluginInterface
 {
@@ -11,7 +12,7 @@ abstract class AbstractMinifier implements PluginInterface
 
         return function (array $streams) use ($that) {
             foreach ($streams as $stream) {
-                $minifier = $this->getMinifier();
+                $minifier = $that->getMinifier();
                 $contents = $stream->getContents();
                 $minifier->add($contents);
                 $stream->setContents($minifier->minify());
