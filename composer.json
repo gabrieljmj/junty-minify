@@ -16,7 +16,8 @@
     },
     "require": {
         "php": ">=7.0",
-        "junty/junty-plugin": "^0.1"
+        "junty/junty-plugin": "^0.1",
+        "matthiasmullie/minify": "^1.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.2"
